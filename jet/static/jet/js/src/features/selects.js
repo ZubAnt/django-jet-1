@@ -219,11 +219,7 @@ Select2.prototype = {
                 return;
             }
 
-            if (!$select.hasClass('changelist-filter-select')) {
-                return;
-            }
-
-            if (!$select.hasAttribute('data-autocomplete-light-function')) {
+            if ($select[0].hasAttribute('data-autocomplete-light-function')) {
                 return;
             }
             self.initSelect($select, DropdownAdapter);
