@@ -18,13 +18,14 @@ RelatedWidgetWrapperUpdater.prototype = {
         this.replaceLinkIcon(
             'img[src*="admin/img/icon-changelink"], img[src*="admin/img/icon_changelink"]'
         );
-        this.replaceLinkIcon(
-            'img[src*="admin/img/icon-deletelink"], img[src*="admin/img/icon_deletelink"]'
-        );
+        // this.replaceLinkIcon(
+        //     'img[src*="admin/img/icon-deletelink"], img[src*="admin/img/icon_deletelink"]'
+        // );
 
         $('img[src*="admin/img/selector-search"]').remove();
 
-        $('.add-related, .add-another, .change-related, .delete-related, .related-lookup')
+        $('.add-related, .add-another, .change-related, .related-lookup')
+        // $('.add-related, .add-another, .change-related, .delete-related, .related-lookup')
             .addClass('initialized');
     },
     run: function() {
