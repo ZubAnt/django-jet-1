@@ -8,8 +8,12 @@ var Inline = function($inline) {
 Inline.prototype = {
     initAddRow: function($inline) {
         $inline.on('click', '.add-row a', function() {
-            var $inlineItem = $inline.find('.inline-related:not(.empty-form)').last();
-            $inline.trigger('inline-group-row:added', [$inlineItem]);
+            $inline.find('.inline-related:not(.empty-form)').each(function() {
+                if ($(this) !== undefined)
+                {
+                    $inline.trigger('inline-group-row:added', [$(this)]);
+                }
+            });
         });
     },
     run: function() {
