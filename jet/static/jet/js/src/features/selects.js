@@ -219,6 +219,10 @@ Select2.prototype = {
                 return;
             }
 
+            if (!$select.hasClass('changelist-filter-select'))
+            {
+                return;
+            }
             self.initSelect($select, DropdownAdapter);
         });
 
