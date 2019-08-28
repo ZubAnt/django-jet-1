@@ -73,8 +73,10 @@ ChangeFormTabs.prototype = {
 
             if (selector) {
                 var $contentWrapper = $contentWrappers.filter('.' + selector);
-
-                if ($contentWrapper.find('.form-row.errors').length) {
+                var $hasErrors = $contentWrapper.find('.form-row.errors').length
+                    + $contentWrapper.find('.form-box.errors').length
+                    + $contentWrapper.find('.errorlist').length;
+                if ($hasErrors) {
                     $tabItem.addClass('errors');
                 }
             }
