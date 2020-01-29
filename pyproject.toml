@@ -4,6 +4,11 @@ version = "1.0.7.1"
 description = ""
 authors = ["Vladimir Puzakov <vppuzakov@gmail.com>"]
 
+packages = [
+    { include = "jet" },
+    { include = "jet/**/*.py" },
+]
+
 [tool.poetry.dependencies]
 python = "^3.7"
 django = "^3.0"
