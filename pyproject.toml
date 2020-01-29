@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "rds-django-jet"
-version = "0.7.1"
+version = "1.0.7.1"
 description = ""
 authors = ["Vladimir Puzakov <vppuzakov@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
-django = "^2.2"
+django = "^3.0"
 
 [tool.poetry.dev-dependencies]
 wheel = "^0.33.6"
