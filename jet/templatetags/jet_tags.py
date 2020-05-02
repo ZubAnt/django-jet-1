@@ -195,7 +195,8 @@ def jet_sibling_object(context, next):
 
     return {
         'label': str(sibling_object),
-        'url': url
+        'url': url,
+        'object': sibling_object,
     }
 
 

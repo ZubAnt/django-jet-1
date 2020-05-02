@@ -117,6 +117,7 @@
 
     {% jet_change_form_sibling_links_enabled as show_siblings %}
     {% if change and show_siblings %}
+        {% block siblings %}
         <div class="changeform-navigation">
             {% spaceless %}
                 {% jet_previous_object as sibling %}
@@ -144,6 +145,7 @@
                 </a>
             {% endspaceless %}
         </div>
+        {% endblock %}
     {% endif %}
 
     {% jet_get_side_menu_compact as SIDE_MENU_COMPACT %}
